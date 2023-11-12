@@ -1,0 +1,14 @@
+@import 'utilities';
+@import 'config';
+
+%h1{
+    font-weight: 300;
+}
+
+.headliner{
+    @extend %h1;
+}
+
+.Profile{
+    @extend %h1;
+}

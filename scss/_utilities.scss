@@ -1,0 +1,42 @@
+@use 'config' as config;
+// SCSS Function that will make sure text is light on dark backgrounds, and dark on light backgrounds.
+@function background-color-picker($color) {
+    @if(lightness($color) > 70) {
+      @warn 'Assuming color `#{$color}` to be color';
+      @return black;
+    } @else {
+      @return $background-color;
+    }
+  }
+  @function text-color-picker($color) {
+    @if(lightness($color) > 70) {
+      @return $primary-color;
+    } @else {
+      @return black;
+    }
+  }
+  @function nav-color-picker($color) {
+    @if(lightness($color) > 70) {
+      @return $nav-color;
+    } @else {
+      @return $secondary-color;
+    }
+  }
+
+
+  //SCSS mixin
+  @mixin set-bg($color){
+    background-color: $color;
+    color: background-color-picker($color);
+  }
+
+  @mixin set-text($color){
+    color: text-color-picker($color);
+  }
+
+  @mixin set-nav($color){
+    background-color: $color;
+    color: nav-color-picker($color);
+  }
+
+  

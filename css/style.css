@@ -1,0 +1,69 @@
+.Profile, .headliner {
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+}
+
+nav {
+  background-color: beige;
+  color: beige;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav li {
+  color: black;
+  padding: 10px;
+}
+nav li:hover {
+  color: green;
+}
+
+.container {
+  color: black;
+  display: flex;
+}
+.container div p {
+  float: left;
+  padding-left: 40px;
+  color: black;
+  width: 30%;
+  font-size: large;
+}
+.container div h1 {
+  padding-left: 20px;
+}
+.container div img {
+  width: 60%;
+  border: 2px solid green;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+div {
+  margin-top: 60px;
+}
+div h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+div h3 {
+  text-align: center;
+}
+div p {
+  font-family: "Courier New", Courier, monospace;
+}
+div p:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
